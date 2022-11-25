@@ -1,9 +1,6 @@
 //package instrument;
 
-import soot.PackManager;
-import soot.Scene;
-import soot.SootClass;
-import soot.Transform;
+import soot.*;
 import soot.options.Options;
 
 import java.util.Arrays;
@@ -13,7 +10,7 @@ import java.util.LinkedList;
 public class MainDriver {
 
     public static void main(String[] args) {
-        // mac或linux系统中，';'应被换为':'
+
         Options.v().set_soot_classpath(Scene.v().defaultClassPath() + ";./bin;bin/main");
         Options.v().set_keep_line_number(true);
 
